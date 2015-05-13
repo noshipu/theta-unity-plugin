@@ -6,7 +6,6 @@
 https://developers.theta360.com/ja/docs/sdk/  
 
 ## 備考
-すみません。  
 現在、iOSのみ対応で、一部のAPIのみの対応になります。(※順次更新予定)  
 接続、解除、撮影、画像の取得、エラーの取得が実装済みです。  
 
@@ -32,10 +31,11 @@ http://noshipu.hateblo.jp/entry/2015/04/15/023431
 ## コードの使い方
 ### コンポーネント取得
 `thetaPlugin = GetComponent<ThetaPlugin> ();`  
-### APIの呼び出し基本
+### 基本的なAPIの呼び出し
 `thetaPlugin.Connect (ip_adress, ()=>{/*成功処理*/ }, ()=>{/*失敗処理*/});`  
-### コールバックの設定の基本
+### 基本的なコールバックの設定
 `thetaPlugin.SetCallbackObjectAdd ((texture)=>{/*テクスチャ取得後の処理*/ });`  
 
 ### Sample Project
 SampleProjectにて、接続、解除、撮影、画像の取得を確認することができます。
+球体モデルも含まれており撮影後の画像をフリックでぐりぐり動かせます。
